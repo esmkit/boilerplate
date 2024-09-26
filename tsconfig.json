@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    // "jsx": "preserve",
+    "module": "ES2022",
+    "moduleResolution": "bundler",
+    "types": ["@types/bun", "@types/web", "@types/node"],
+    "removeComments": true,
+    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["build", "dist", "node_modules"]
+}
