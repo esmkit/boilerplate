@@ -1,0 +1,3 @@
+[install.scopes]
+rdfkit = { token = "$GIT_TOKEN", url = "https://npm.pkg.github.com" }
+

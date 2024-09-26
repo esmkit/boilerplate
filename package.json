@@ -1,0 +1,52 @@
+{
+  "name": "@esmkit/boilerplate",
+  "version": "0.1.0",
+  "license": "UNLICENSED",
+  "description": "@esmkit/boilerplate",
+  "author": "Billgo <hi@billgo.me>",
+  "bugs": "https://github.com/esmkit/boilerplate/issues",
+  "repository": "git+ssh://git@github.com:esmkit/boilerplate.git",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./*": "./*"
+  },
+  "scripts": {
+    "prepublishOnly": "bun run build",
+    "build": "bunx rimraf dist && bun run build:esm && bun run build:bun",
+    "build:bun": "bun run bun.build.mjs",
+    "build:esm": "bunx tsup",
+    "start": "bun run --watch examples/index.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "1.9.2",
+    "@devjskit/biome-config": "^0.1.8",
+    "@devjskit/copy-files": "^1.0.0",
+    "@devjskit/cross-env": "^1.0.0",
+    "@devjskit/kill-port": "^1.0.0",
+    "@devjskit/rimraf": "^1.0.0",
+    "@types/bun": "^1.1.10",
+    "@types/node": "^22.7.2",
+    "@types/web": "^0.0.166",
+    "cpy-cli": "^5.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  }
+}
