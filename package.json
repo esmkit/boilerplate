@@ -36,7 +36,7 @@
     "@devjskit/biome-config": "^0.1.14",
     "@types/bun": "^1.1.14",
     "@types/node": "^22.10.2",
-    "@types/web": "^0.0.186",
+    "@types/web": "^0.0.187",
     "tsup": "^8.3.5",
     "typescript": "^5.7.2"
   },
