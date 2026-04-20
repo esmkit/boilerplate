@@ -4,7 +4,7 @@
 	"json.format.enable": true,
 	"editor.codeActionsOnSave": {
 		"quickfix.biome": "explicit",
-    "source.fixAll.biome": "explicit",
+		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
 	"[typescript]": {
@@ -12,5 +12,6 @@
 	},
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"
-	}
+	},
+	"js/ts.tsdk.path": "node_modules/typescript/lib"
 }
