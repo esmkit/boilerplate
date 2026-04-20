@@ -20,6 +20,12 @@ bun add @esmkit/boilerplate
 
 ```
 
+## Development
+
+```bash
+bun run build
+```
+
 ## License
 
 MIT © BILLGO. See LICENSE for details.
