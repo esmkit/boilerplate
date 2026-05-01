@@ -1,5 +1,7 @@
 import { expect, test } from "bun:test";
 
-test("tutorial: 2 + 2", () => {
-  expect(2 + 2).toBe(4);
+import { add } from "../src/index";
+
+test("add returns the sum of two numbers", () => {
+  expect(add(1, 2)).toBe(3);
 });

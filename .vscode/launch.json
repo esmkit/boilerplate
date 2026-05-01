@@ -1,11 +1,20 @@
 {
-	"configurations": [
-		{
-			"type": "node-terminal",
-			"name": "start",
-			"request": "launch",
-			"command": "bun build",
-			"cwd": "${workspaceFolder}"
-		}
-	]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "bun:test current file",
+      "runtime": "bun",
+      "runtimeArgs": ["test"],
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "env": {},
+      "strictEnv": false,
+      "watchMode": false,
+      "stopOnEntry": false,
+      "noDebug": false,
+      "args": []
+    },
+  ]
 }

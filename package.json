@@ -22,9 +22,9 @@
     "./*": "./*"
   },
   "scripts": {
-    "prepublishOnly": "bun run build",
-    "build": "bunx rimraf dist && bunx tsdown",
-    "start": "bun run --watch examples/index.ts"
+    "build": "bunx rimraf dist && NODE_ENV=production bunx tsdown",
+    "start": "bun run --watch examples/index.ts",
+    "test": "bun test"
   },
   "dependencies": {},
   "devDependencies": {
